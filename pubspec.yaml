@@ -14,7 +14,7 @@ dependencies:
 
   flutter_localizations:
     sdk: flutter
-  intl: '0.17.0'
+  intl: any
   intl_translation: '>=0.17.7 <=0.17.10'
 
   google_maps_flutter: ^0.5.32
