@@ -78,7 +78,7 @@ class _FutureLoadingBuilderState<T> extends State<FutureLoadingBuilder<T>> {
                 d('SocketException-> ${error.message}');
                 return Center(
                   child: Text(
-                    S.of(context)?.please_check_your_connection ??
+
                         'Please check your connection',
                     overflow: TextOverflow.fade,
                   ),
@@ -86,7 +86,7 @@ class _FutureLoadingBuilderState<T> extends State<FutureLoadingBuilder<T>> {
               } else if (error is PlatformException &&
                   error.code == 'ERROR_GEOCODING_COORDINATES') {
                 return Text(
-                  S.of(context)?.please_check_your_connection ??
+
                       'Please check your connection',
                   overflow: TextOverflow.fade,
                 );
